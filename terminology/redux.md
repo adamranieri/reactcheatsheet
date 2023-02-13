@@ -10,3 +10,18 @@
 - **Action** - a plain object that contains all the information required to perform the action
     - Have a type property and sometimes a payload
 - **Action Creator** - a function that creates and dispatches actions
+
+## Redux Saga
+- **Redux middleware**
+  - It is designed to integrate into Redux not be a standalone library
+  - primary reason is to work with asynchronous code
+- **generator function**
+  - A function that will **yield** mutiple values as opposed to return a single value
+-  **Worker Saga** - generator function that takes an action, processes it, and typically sends another action to the actual reducer
+-  **Watcher Saga** - generator function that intercepts actions and triggers the corresponding worker function
+-  **Root Saga** - a generator function that contains all the watcher sagas you've created
+-  **Effect**
+   -  An object that will be processed by Saga
+   -  Methods that generate effect objects
+      -  put()
+      -  call()

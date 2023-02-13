@@ -15,21 +15,17 @@
    1. A mirror version of the DOM that is stored in JS as 100% JS objects
    2. React does all operations on the virtual DOM and then updates the real DOM selectively as an optimization.
 
-3. **key - a string attribute included when creating an array of elements
+3. **key** - a string attribute included when creating an array of elements
     - should give each element in the array a stable identity
-4.  Routing - the process of redirecting a user to different pages based on a request/action
+4.  **Routing** - the process of redirecting a user to different pages based on a request/action
 5.  Hook - introduced in React 16.8, lets you use state and other features without writing a class
-6.  useState hook - lets us keep track of a stateful value in a React component
-    - Initialize it by giving the initial state, returns the current state and a function to update it
-7.  useEffect hook - lets you perform side effects in function components
-    - Pass in a function and an optional dependencies array
-8.  Side Effect - an action that is performed with something outside of React such as an API request
+6.  **Side Effect**- an action that is performed with something outside of React such as an API request
     - Unpredictable
     - Other examples: interact with browser APIs or using timing functions like setTimeout or setInterval
-9.  useReducer hook - lets us add a reducer to our component
+7.  useReducer hook - lets us add a reducer to our component
     - Takes in a reducer function and initial state as arguments
     - Returns the current state and a dispatch function
-10. Reducer - a function that specifies how our state is updated
+8.  Reducer - a function that specifies how our state is updated
     - should take the state and action as arguments and return the new state
 ## Redux
 1. Redux -
@@ -40,9 +36,5 @@
 5.  Action - a plain object that contains all the information required to perform the action
     - Have a type property and sometimes a payload
 6. Action Creator - a function that creates and dispatches actions
-7. Redux Saga - a middleware library that allows us to intercept actions
-    - primary reason is to work with asynchronous code
-8. Worker Saga - takes an action, process it, and typically send another action to the actual reducer
-9.  Watcher Saga - intercepts actions and trigger the corresponding worker function
-10. Root Saga - a generator function that contains all the watcher sagas you've created
+
 
