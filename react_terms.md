@@ -1,17 +1,17 @@
 ## React
-1. React - a front-end JavaScript library for building user interfaces based on components
-1. One Way Data Flow - data flows in one direction in React, such as from parent component to child component
-1. Single-Page Application - an application that loads a single page and all the necessary assets (JS and CSS) required for it to run
+1. **React** - a front-end JavaScript library for building user interfaces based on components
+1. **One Way Data Flow** - data flows in one direction in React, such as from parent component to child component
+3. **Single-Page Application** - an application that loads a single page and all the necessary assets (JS and CSS) required for it to run
     - Interactions with the page do not require another trip to the server
-1. ES6 - ECMAScript Language Specification standard version 6, introducing arrow functions, classes, template literals, let and const, etc.
+1. **ES6** - ECMAScript Language Specification standard version 6, introducing arrow functions, classes, template literals, let and const, etc.
     - JS is an implementation of this standard
-1. JSX - a syntax extension to JavaScript. It is similar to a template lanuage but has access to JS
+1. **JSX** - a syntax extension to JavaScript. It is similar to a template lanuage but has access to JS
     - JSX is compiled to plain JS objects called "React elements"
-1. Elements - the building blocks of React applications, what you want to see on the screen
+1. **Elements** - the building blocks of React applications, what you want to see on the screen
     - Typically returned from components
-1. Components - small, reusable pieces of code that return a React element to be rendered on the page
+1. **Components** - small, reusable pieces of code that return a React element to be rendered on the page
     - Can be functions or ES6 classes
-1. Nested Component - any child component linked to a parent component
+
 1. Higher-Order component - a component that takes a component and returns a new component
 1. props - inputs to a React component, should never be modified
 1. props.childen - contains the content between the opening and closing tags of a component
@@ -49,3 +49,4 @@
 1. Worker Saga - takes an action, process it, and typically send another action to the actual reducer
 1. Watcher Saga - intercepts actions and trigger the corresponding worker function
 1. Root Saga - a generator function that contains all the watcher sagas you've created
+
