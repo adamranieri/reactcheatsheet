@@ -11,42 +11,38 @@
     - Typically returned from components
 1. **Components** - small, reusable pieces of code that return a React element to be rendered on the page
     - Can be functions or ES6 classes
+2. **Virtual DOM**
+   1. A mirror version of the DOM that is stored in JS as 100% JS objects
+   2. React does all operations on the virtual DOM and then updates the real DOM selectively as an optimization.
 
-1. Higher-Order component - a component that takes a component and returns a new component
-1. props - inputs to a React component, should never be modified
-1. props.childen - contains the content between the opening and closing tags of a component
-1. state - data associated with a component that changes over time
-1. context - allows for sharing data between components
-1. key - a string attribute included when creating an array of elements
+3. **key - a string attribute included when creating an array of elements
     - should give each element in the array a stable identity
-1. ref - provide a way to access DOM nodes
-1. Routing - the process of redirecting a user to different pages based on a request/action
-1. Hook - introduced in React 16.8, lets you use state and other features without writing a class
-1. useState hook - lets us keep track of a stateful value in a React component
+4.  Routing - the process of redirecting a user to different pages based on a request/action
+5.  Hook - introduced in React 16.8, lets you use state and other features without writing a class
+6.  useState hook - lets us keep track of a stateful value in a React component
     - Initialize it by giving the initial state, returns the current state and a function to update it
-1. useEffect hook - lets you perform side effects in function components
+7.  useEffect hook - lets you perform side effects in function components
     - Pass in a function and an optional dependencies array
-1. Side Effect - an action that is performed with something outside of React such as an API request
+8.  Side Effect - an action that is performed with something outside of React such as an API request
     - Unpredictable
     - Other examples: interact with browser APIs or using timing functions like setTimeout or setInterval
-1. useReducer hook - lets us add a reducer to our component
+9.  useReducer hook - lets us add a reducer to our component
     - Takes in a reducer function and initial state as arguments
     - Returns the current state and a dispatch function
-1. Reducer - a function that specifies how our state is updated
+10. Reducer - a function that specifies how our state is updated
     - should take the state and action as arguments and return the new state
 ## Redux
-1. Redux - a JS library for managing centralized application state
-1. Flux - an architectural pattern that splits an app into 3 or 4 parts: (Store, Dispatcher, View, Action)
-1. Stores - Manages the state of the application through methods
-1. Dispatchers - a single object that broadcasts actions to the store
-1.  Views - the user interface component
+1. Redux -
+2. Stores - Manages the state of the application through methods
+3. Dispatchers - a single object that broadcasts actions to the store
+4.  Views - the user interface component
     - listens for store changes and re-renders
-1.  Action - a plain object that contains all the information required to perform the action
+5.  Action - a plain object that contains all the information required to perform the action
     - Have a type property and sometimes a payload
-1. Action Creator - a function that creates and dispatches actions
-1. Redux Saga - a middleware library that allows us to intercept actions
+6. Action Creator - a function that creates and dispatches actions
+7. Redux Saga - a middleware library that allows us to intercept actions
     - primary reason is to work with asynchronous code
-1. Worker Saga - takes an action, process it, and typically send another action to the actual reducer
-1. Watcher Saga - intercepts actions and trigger the corresponding worker function
-1. Root Saga - a generator function that contains all the watcher sagas you've created
+8. Worker Saga - takes an action, process it, and typically send another action to the actual reducer
+9.  Watcher Saga - intercepts actions and trigger the corresponding worker function
+10. Root Saga - a generator function that contains all the watcher sagas you've created
 
